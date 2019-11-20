@@ -1,0 +1,14 @@
+.Footer {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  background-color: black;
+
+  p {
+    text-align: center;
+    font-family: Source Sans Pro;
+    font-weight: 300;
+    margin: 2em;
+    color: white;
+  }
+}
