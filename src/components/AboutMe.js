@@ -5,7 +5,11 @@ export default function AboutMe() {
   return (
     <div className={styles.AboutMe}>
       <section className={styles.paragraphSection}>
-        <h2>who am i?</h2>
+        <section className={styles.whoAmI}>
+          <h2>who am</h2>
+          <img src="src/assets/eye.png" alt="grid" />
+          <h2>?</h2>
+        </section>
         <p>Full Stack Software Developer with a background in Digital Marketing and Film, and a passion for creating innovative and stylish web applications.</p>
       </section>
       <section className={styles.imagesSection}>

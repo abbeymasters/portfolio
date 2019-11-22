@@ -1,10 +1,9 @@
 .AboutMe {
   display: flex;
   justify-content: space-between;
+  height: 500px;
   margin-top: 5%;
-  position: absolute;
   width: 100vw;
-  margin-bottom: 5%;
 
   h2 {
     font-family: Source Sans Pro;
@@ -26,14 +25,33 @@
   width: 30vw;
   margin-left: 5%;
   margin-top: 5%;
+
+   img {
+    margin-bottom: 0;
+    width: 40%;
+    height: 40%;
+   }
 }
 
 .imagesSection {
   margin-right: 5%;
+  width: 50vw;
+  position: relative;
+  height: 10em;
+}
+
+.firstImage {
+  position: absolute;
+  left: 40%;
 }
 
 .secondImage {
   position: absolute;
-  right: 6%;
-  bottom: 5%;
+  left: 10%;
+}
+
+.whoAmI {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
