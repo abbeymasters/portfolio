@@ -23,13 +23,13 @@
 
 .paragraphSection {
   width: 30vw;
-  margin-left: 5%;
+  margin-left: 8%;
   margin-top: 5%;
 
    img {
     margin-bottom: 0;
-    width: 40%;
-    height: 40%;
+    width: 20%;
+    height: 20%;
    }
 }
 

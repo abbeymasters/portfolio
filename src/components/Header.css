@@ -1,5 +1,4 @@
 .Header {
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -7,7 +6,7 @@
 
   nav {
     display: flex;
-    margin-right: 7%;
+    margin-right: 10%;
   }
 
   li {
@@ -18,7 +17,7 @@
   }
 
   h1 {
-    margin-left: 5%;
+    margin-left: 8%;
     font-family: Lora;
     font-size: 3em;
     line-break: auto;
