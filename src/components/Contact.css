@@ -1,0 +1,97 @@
+.Contact {
+  margin-top: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+  }
+
+  label {
+    font-family: Source Sans Pro;
+    font-weight: 700;
+    margin-bottom: .15em;
+  }
+
+  input {
+    border: none;
+    margin-bottom: 1em;
+    border-radius: .5em;
+    padding: 1em;
+  }
+
+
+
+
+.wrapper {
+  margin-top: 1em;
+  padding: 1.5rem 0;
+  filter: url('#goo');
+  text-align: center;
+}
+
+.button {
+  display: inline-block;
+  text-align: center;
+  background: black;
+  color: #eee;
+  font-weight: bold;
+  padding: 1.18em 1.32em 1.03em;
+  line-height: 1;
+  border-radius: 1em;
+  position: relative;
+  min-width: 8.23em;
+  text-decoration: none;
+  font-family: Pacifico;
+  font-size: 1rem;
+  border: none;
+}
+
+.button:before,
+.button:after {
+  width: 4.4em;
+  height: 2.95em;
+  position: absolute;
+  content: "";
+  display: inline-block;
+  background: black;
+  border-radius: 50%;
+  transition: transform 1s ease;
+  transform: scale(0);
+  z-index: -1;
+}
+
+.button:before {
+  top: -25%;
+  left: 20%;
+}
+
+.button:after {
+  bottom: -25%;
+  right: 20%;
+}
+
+.button:hover:before,
+.button:hover:after {
+  transform: none;
+}
+  
+}
+
+.inputOne {
+  background-color: #fadfbe;
+}
+
+.inputTwo {
+  background-color: #fcd0cc;
+}
+
+.inputThree {
+  background-color: #ffb9b2;
+  border: none;
+  border-radius: .5em;
+  padding: 1em;
+}
