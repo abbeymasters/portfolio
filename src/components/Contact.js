@@ -1,19 +1,25 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import styles from './Contact.css';
+import PropTypes from 'prop-types';
+import { getMailSent } from '../selectors/contentSelectors';
 
-const Contact = () => {
+// button animation inspired by https://codepen.io/ines/pen/oeZdYv?editors=1100
+
+const Contact = ({ handleChange, handleEmail, handleMessage, handleSubmit }) => {
+  const mailSent = useSelector(state => getMailSent(state));
 
   return (
     <section className={styles.Contact}>
       <form>
         <label>NAME</label>
-        <input type="text" className={styles.inputOne} id="name" name="id" placeholder="Name" />
+        <input onChange={handleChange} type="text" className={styles.inputOne} id="name" name="id" placeholder="Name" />
         <label>EMAIL</label>
-        <input type="email" className={styles.inputTwo} id="email" name="email" placeholder="Email Address" />
+        <input onChange={handleEmail} type="email" className={styles.inputTwo} id="email" name="email" placeholder="Email Address" />
         <label>MESSAGE</label>
-        <textarea id="message" className={styles.inputThree} name="message" placeholder="Your message here..."></textarea>
+        <textarea onChange={handleMessage} id="message" className={styles.inputThree} name="message" placeholder="Your message here..." ></textarea>
         <div className={styles.wrapper}>
-          <button className={styles.button}>Submit</button>
+          <button onClick={(e) => handleSubmit(e.target.value)} className={styles.button}>Submit</button>
           {/* Filter: https://css-tricks.com/gooey-effect/ */}
           <svg
             style={{ visibility: 'hidden', position: 'absolute' }}
@@ -36,9 +42,21 @@ const Contact = () => {
             </defs>
           </svg>
         </div>
+        <div>
+          {mailSent &&
+            <div>Thank you for contacting us.</div>
+          }
+        </div>
       </form>
     </section>
   );
+};
+
+Contact.propTypes = {
+  handleChange: PropTypes.func.isRequired,
+  handleSubmit: PropTypes.func.isRequired,
+  handleEmail: PropTypes.func.isRequired,
+  handleMessage: PropTypes.func.isRequired
 };
 
 export default Contact;

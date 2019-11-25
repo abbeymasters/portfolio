@@ -3,12 +3,13 @@ import Contact from '../components/Contact';
 import Header from '../components/Header';
 import AboutMe from '../components/AboutMe';
 import Footer from '../components/Footer';
+import Home from '../container/Home';
 
 export default function App() {
   return (
     <>
       <Header />
-      <Contact />
+      <Home />
       <Footer />
     </>
   );

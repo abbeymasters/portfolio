@@ -1,7 +1,5 @@
 .Footer {
-  position: absolute;
-  left: 0;
-  bottom: 0;
+  flex-shrink: 0;
   width: 100vw;
   background-color: black;
 
@@ -9,8 +7,9 @@
     text-align: center;
     font-family: Source Sans Pro;
     font-weight: 300;
-    margin-bottom: 2em;
+    padding-bottom: 2em;
     color: white;
+    margin-bottom: 0;
   }
 }
 
@@ -36,7 +35,7 @@
 
   a:hover {
       background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .5s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='pink' stroke-width='1.5' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
-      background-position: 0 75%;
+      background-position: 0 80%;
       background-size: auto 7px;
       background-repeat: repeat-x;
       text-decoration: none;
