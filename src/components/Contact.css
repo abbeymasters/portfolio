@@ -3,6 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 
   form {
     display: flex;
@@ -23,9 +24,6 @@
     padding: 1em;
   }
 
-
-
-
 .wrapper {
   margin-top: 1em;
   padding: 1.5rem 0;
@@ -33,7 +31,7 @@
   text-align: center;
 }
 
-.button {
+p {
   display: inline-block;
   text-align: center;
   background: black;
@@ -50,8 +48,8 @@
   border: none;
 }
 
-.button:before,
-.button:after {
+p:before,
+p:after {
   width: 4.4em;
   height: 2.95em;
   position: absolute;
@@ -64,18 +62,18 @@
   z-index: -1;
 }
 
-.button:before {
+p:before {
   top: -25%;
   left: 20%;
 }
 
-.button:after {
+p:after {
   bottom: -25%;
   right: 20%;
 }
 
-.button:hover:before,
-.button:hover:after {
+p:hover:before,
+p:hover:after {
   transform: none;
 }
   

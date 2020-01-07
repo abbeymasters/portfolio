@@ -1,0 +1,11 @@
+.Portfolio {
+  p {
+    transform: rotate(-90deg);
+    float: left;
+    margin-top: 17%;
+    font-family: Source Sans Pro;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+}

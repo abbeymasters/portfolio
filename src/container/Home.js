@@ -27,6 +27,7 @@ const Home = () => {
       .catch(error => dispatch(addError(error)));
   };
 
+
   //   axios({
   //     method: 'post',
   //     url: API_PATH,
@@ -39,6 +40,7 @@ const Home = () => {
   //     })
   //     .catch(error => dispatch(addError(error)));
   // };
+
 
   const handleEmailChange = ({ target }) => {
     event.preventDefault();
