@@ -30,11 +30,19 @@ const Contact = () => {
           </defs>
         </svg>
       </div>
-      <div>
-        <h3 className={styles.inputOne}>Abbey Masters</h3>
-        <h3 className={styles.inputTwo}>abbeykmasters@gmail.com</h3>
-        <h3 className={styles.inputThree}>hi</h3>
-      </div>
+      <section className={styles.whoami}>
+        <div>
+          <h2>Who Am I?</h2><h3 className={styles.inputOne}>Abbey Masters</h3>
+        </div>
+        <div>
+          <h2>Email Me:</h2>
+          <h3 className={styles.inputTwo}>abbeykmasters@gmail.com</h3>
+        </div>
+        <div>
+          <img src="src/assets/location.png" />
+          <h3 className={styles.inputThree}>Portland, Oregon</h3>
+        </div>
+      </section>
     </section>
   );
 };
