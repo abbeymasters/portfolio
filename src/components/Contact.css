@@ -99,23 +99,45 @@ p:hover:after {
   flex-direction: column;
   align-items: space-between;
 
+ 
+
   div {
     display: flex;
     flex-direction: row;
   }
 
   h2 {
-    width: 12vw;
+    width: 5vw;
     margin: 0.5em;
   }
 
   img {
-    width: 40%;
+    width: 20%;
+    min-width: 50px;
   }
 
-  h3 { 
+  h3, a { 
     text-align: left;
     width: 30vw;
-    margin: 0.5em;
+    margin: 0.75em;
+    height: 18%;
   }
+
+  a {
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+
+  a:hover{ 
+    animation: pulse 1s;
+    animation-timing-function: linear; 
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    25% { transform: scale(1.07); }
+    50% { transform: scale(1.15); }
+    75% { transform: scale(1.07); }
+    100% { transform: scale(1); }
+    }
 }

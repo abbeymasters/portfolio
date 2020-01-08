@@ -32,12 +32,16 @@ const Contact = () => {
       </div>
       <section className={styles.whoami}>
         <div>
-          <h2>Who Am I?</h2>
+          <h2>
+            <img src="src/assets/meicon.png" />
+          </h2>
           <h3 className={styles.inputOne}>Abbey Masters</h3>
         </div>
         <div>
-          <h2>Email Me:</h2>
-          <h3 className={styles.inputTwo}>abbeykmasters@gmail.com</h3>
+          <h2>
+            <img src="src/assets/emailicon.png" />
+          </h2>
+          <a href="mailto:abbeykmasters@gmail.com" className={styles.inputTwo}>abbeykmasters@gmail.com</a>
         </div>
         <div>
           <h2>
