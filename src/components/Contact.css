@@ -65,7 +65,9 @@ p:hover:after {
   border-radius: .5em;
   margin-left: 2em;
   color: white;
-  width: 60%;
+  width: 40%;
+  min-width: 215px;
+  height: 18%;
   padding: .5em;
 }
 
@@ -75,28 +77,45 @@ p:hover:after {
   padding: .5em;
   margin-left: 2em;
   color: white;
-  width: 60%;
+  width: 40%;
+  min-width: 215px;
+  height: 18%;
 }
 
 .inputThree {
   background-color: #ffb9b2;
-  border: none;
   border-radius: .5em;
-  padding: 1em;
-  color: white;
-  width: 60%;
+  padding: .5em;
   margin-left: 2em;
+  color: white;
+  width: 40%;
+  min-width: 215px;
+  height: 18%;
 }
 
 .whoami {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+
   div {
     display: flex;
     flex-direction: row;
-    text-align: left;
+  }
+
+  h2 {
+    width: 12vw;
+    margin: 0.5em;
   }
 
   img {
-    max-width: 100px;
-    min-width: 50px;
+    width: 40%;
+  }
+
+  h3 { 
+    text-align: left;
+    width: 30vw;
+    margin: 0.5em;
   }
 }
