@@ -28,7 +28,7 @@ const portfolioItems = [
   {
     title: 'DejaBrew',
     img: '',
-    description: 'DejaBrew utilizes Vanilla JavaScript, HTML and CSS to teach users how to make espresso-based coffee drinks. Hone your skills in practice mode, and then move to play mode where you\'ll be timed!',
+    description: 'DejaBrew utilizes Vanilla JavaScript, HTML and CSS to teach users how to make espresso-based coffee drinks. Users hone their skills in practice mode, and then move to play mode where they\'ll be timed.',
     techStack: ['JavaScipt', 'HTML', 'CSS'],
     github: 'https://github.com/team-caffeine/team-caffeine.github.io',
     frontEndUrl: 'https://team-caffeine.github.io',
