@@ -1,5 +1,6 @@
 .Portfolio {
-  p {
+  margin-bottom: 8%;
+  h1 {
     transform: rotate(-90deg);
     float: left;
     margin-top: 17%;
