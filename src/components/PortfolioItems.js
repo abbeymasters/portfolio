@@ -15,13 +15,13 @@ const PortfolioItems = ({ title, img, description, techStack, github, frontEndUr
     <section className={styles.PortfolioItems}>
       <img src={img} alt={title}></img>
       <div className={styles.textSection}>
+        <a href={github} rel="noopener noreferrer" target="_blank">Deployed</a>
+        <a href={frontEndUrl} rel="noopener noreferrer" target="_blank">Front-End</a>
+        <a href={otherUrl} rel="noopener noreferrer" target="_blank">Back-End</a>
         <h1>{title}</h1>
         <h3>{description}</h3>
         <h4>Tech Stack:</h4>
         <p>{splitTechStack}</p>
-        <a href={github} rel="noopener noreferrer" target="_blank">Deployed Site</a>
-        <a href={frontEndUrl} rel="noopener noreferrer" target="_blank">Front End</a>
-        <a href={otherUrl} rel="noopener noreferrer" target="_blank">BackEnd</a>
       </div>
     </section>
   );

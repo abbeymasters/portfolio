@@ -8,7 +8,9 @@ export default function Portfolio() {
 
   return (
     <section className={styles.Portfolio}>
+      <button>decrement</button>
       <PortfolioItems {...portfolioItems[1]} />
+      <button>increment</button>
     </section>
   );
 }

@@ -1,51 +1,48 @@
 .PortfolioItems {
-  width: 60vw;
-  padding: 5vh;
   display: flex;
   flex-direction: row;
-  font-family: Source Sans Pro;
-  color: black;
-  font-weight: 700;
-  
+  width: 50%;
+  justify-content: center;
+  margin-right: 0;
+
   img {
-    border-radius: 0.5em;
+    width: 30%;
+    min-width: 150px;
+    
   }
 
   .textSection {
-    width: 50vw;
-    height: 30%;
-    margin-top: 7%;
-    margin-left: -10%;
-    background-color: #fadfbe;
-    border-radius: 8%;
-    padding: 2%;
+    margin-left: 5%;
+    width: 50%;
+    font-family: Source Sans Pro;
 
-    h1 {
-      text-transform: uppercase;
-      
-    }
-    h3 {
-
-      word-wrap: break-word;
-      width: 20vw;
-      padding: 2%;
-    }
-  
     a {
-      color: black;
       text-decoration: none;
+      margin-right: 1em;
+      color: #ffb620;
+      font-weight: 700;
       text-transform: uppercase;
-      margin: 1em;
     }
-  
-    h4 {
-      font-size: 1.5em;
-      margin: 0;
-    }
-  
-    p {
-      font-weight: 400;
-      margin: 0;
-    }
+
+     h1 {
+      font-size: 2em;
+      color: #eb4d1a;
+     }
+
+     h3 {
+       color: #ffb9b2;
+       font-weight: 400;
+       letter-spacing: 0.25em;
+     }
+
+     h4 {
+       font-size: 1.5em;
+       margin: 0;
+     }
+
+     p {
+       color: #ffb620;
+       font-weight: 700;
+     }
   }
 }
