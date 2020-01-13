@@ -1,0 +1,48 @@
+.PortfolioItems {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  justify-content: center;
+  margin-right: 0;
+
+  img {
+    width: 30%;
+    min-width: 150px;
+    
+  }
+
+  .textSection {
+    margin-left: 5%;
+    width: 50%;
+    font-family: Source Sans Pro;
+
+    a {
+      text-decoration: none;
+      margin-right: 1em;
+      color: #ffb620;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+     h1 {
+      font-size: 2em;
+      color: #eb4d1a;
+     }
+
+     h3 {
+       color: #ffb9b2;
+       font-weight: 400;
+       letter-spacing: 0.25em;
+     }
+
+     h4 {
+       font-size: 1.5em;
+       margin: 0;
+     }
+
+     p {
+       color: #ffb620;
+       font-weight: 700;
+     }
+  }
+}

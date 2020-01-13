@@ -1,30 +1,10 @@
 .Contact {
-  margin-top: 10vh;
+  margin-top: 4em;
+  margin-bottom: 4em;
   display: flex;
   justify-content: center;
   align-items: center;
-
-  form {
-    display: flex;
-    flex-direction: column;
-    width: 30vw;
-  }
-
-  label {
-    font-family: Source Sans Pro;
-    font-weight: 700;
-    margin-bottom: .15em;
-  }
-
-  input {
-    border: none;
-    margin-bottom: 1em;
-    border-radius: .5em;
-    padding: 1em;
-  }
-
-
-
+  flex-direction: column;
 
 .wrapper {
   margin-top: 1em;
@@ -33,7 +13,7 @@
   text-align: center;
 }
 
-.button {
+p {
   display: inline-block;
   text-align: center;
   background: black;
@@ -43,15 +23,15 @@
   line-height: 1;
   border-radius: 1em;
   position: relative;
-  min-width: 8.23em;
+  min-width: 15em;
   text-decoration: none;
   font-family: Pacifico;
-  font-size: 1rem;
+  font-size: 1.2rem;
   border: none;
 }
 
-.button:before,
-.button:after {
+p:before,
+p:after {
   width: 4.4em;
   height: 2.95em;
   position: absolute;
@@ -64,34 +44,104 @@
   z-index: -1;
 }
 
-.button:before {
+p:before {
   top: -25%;
   left: 20%;
 }
 
-.button:after {
+p:after {
   bottom: -25%;
   right: 20%;
 }
 
-.button:hover:before,
-.button:hover:after {
+p:hover:before,
+p:hover:after {
   transform: none;
 }
-  
 }
 
 .inputOne {
   background-color: #fadfbe;
+  border-radius: .5em;
+  margin-left: 2em;
+  color: white;
+  width: 40%;
+  min-width: 215px;
+  height: 18%;
+  padding: .5em;
 }
 
 .inputTwo {
   background-color: #fcd0cc;
+  border-radius: .5em;
+  padding: .5em;
+  margin-left: 2em;
+  color: white;
+  width: 40%;
+  min-width: 215px;
+  height: 18%;
 }
 
 .inputThree {
   background-color: #ffb9b2;
-  border: none;
   border-radius: .5em;
-  padding: 1em;
+  padding: .5em;
+  margin-left: 2em;
+  color: white;
+  width: 40%;
+  min-width: 215px;
+  height: 18%;
+}
+
+.whoami {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+
+ 
+
+  div {
+    display: flex;
+    flex-direction: row;
+  }
+
+  h2 {
+    width: 5vw;
+    margin: 0.5em;
+  }
+
+  img {
+    width: 20%;
+    min-width: 50px;
+  }
+
+  h3, a { 
+    text-align: left;
+    width: 30vw;
+    margin: 0.75em;
+    height: 18%;
+    font-family: Source Sans Pro;
+    font-weight: 200;
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: Source Sans Pro;
+    font-weight: 200;
+  }
+
+  a:hover{ 
+    animation: pulse 1s;
+    animation-timing-function: linear; 
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    25% { transform: scale(1.07); }
+    50% { transform: scale(1.15); }
+    75% { transform: scale(1.07); }
+    100% { transform: scale(1); }
+    }
 }
