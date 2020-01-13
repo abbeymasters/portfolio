@@ -3,15 +3,26 @@ import PropTypes from 'prop-types';
 import styles from './PortfolioItems.css';
 
 const PortfolioItems = ({ title, img, description, techStack, github, frontEndUrl, otherUrl }) => {
+
+  const newArray = { techStack }.techStack;
+  const splitTechStack = newArray.map(item => {
+    return (
+      <p key={item}>— {item}</p>
+    );
+  });
+
   return (
     <section className={styles.PortfolioItems}>
-      <h1>{title}</h1>
       <img src={img} alt={title}></img>
-      <h3>{description}</h3>
-      <p>{techStack}</p>
-      <a href={github} rel="noopener noreferrer" target="_blank">Deployed Site</a>
-      <a href={frontEndUrl} rel="noopener noreferrer" target="_blank">Front End</a>
-      <a href={otherUrl} rel="noopener noreferrer" target="_blank">BackEnd</a>
+      <div className={styles.textSection}>
+        <h1>{title}</h1>
+        <h3>{description}</h3>
+        <h4>Tech Stack:</h4>
+        <p>{splitTechStack}</p>
+        <a href={github} rel="noopener noreferrer" target="_blank">Deployed Site</a>
+        <a href={frontEndUrl} rel="noopener noreferrer" target="_blank">Front End</a>
+        <a href={otherUrl} rel="noopener noreferrer" target="_blank">BackEnd</a>
+      </div>
     </section>
   );
 };
