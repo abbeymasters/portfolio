@@ -2,13 +2,15 @@
   display: flex;
   flex-direction: row;
   width: 50%;
+  align-items: center;
   justify-content: center;
   margin-right: 0;
 
   img {
-    width: 30%;
-    min-width: 150px;
-    
+    background-color: rgba(0, 0, 0, 0.15);;
+    border-radius: 50%;
+    padding: 2em;
+    width: 18%;
   }
 
   .textSection {
@@ -22,6 +24,13 @@
       color: #ffb620;
       font-weight: 700;
       text-transform: uppercase;
+    }
+
+    a:hover {
+      color: white;
+      background-color: black;
+      padding: 0.75em;
+      border-radius: 15px 50px 30px 5px;
     }
 
      h1 {

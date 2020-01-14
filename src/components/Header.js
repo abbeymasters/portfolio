@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styles from './Header.css';
 
 export default function Header() {
@@ -6,10 +7,9 @@ export default function Header() {
     <header className={styles.Header}>
       <h1>abbey masters</h1>
       <nav>
-        <li>Home</li>
-        <li>About</li>
-        <li>Portfolio</li>
-        <li>Contact</li>
+        <Link to="/">Home</Link>
+        <Link to="/portfolio">Portfolio</Link>
+        <Link to="/contact">Contact</Link>
       </nav>
     </header>
   );

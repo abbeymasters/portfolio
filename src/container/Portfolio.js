@@ -3,7 +3,6 @@ import styles from './Portfolio.css';
 import PortfolioItems from '../components/PortfolioItems';
 import portfolioItems from '../../data/portfolioItems';
 
-
 export default function Portfolio() {
 
   const [index, setIndex] = useState(0);
@@ -22,9 +21,10 @@ export default function Portfolio() {
 
   return (
     <section className={styles.Portfolio}>
-      <button onClick={handleDecrement}>decrement</button>
+      <button onClick={handleDecrement}><img src="src/assets/leftarrow.png" alt="decrement arrow"></img></button>
       <PortfolioItems {...portfolioItems[index]} />
-      <button onClick={handleIncrement}>increment</button>
+      <img className={styles.blob} src="/src/assets/blob1.png" alt="blob image"></img>
+      <button onClick={handleIncrement}><img src="src/assets/rightarrow.png" alt="increment arrow"></img></button>
     </section>
   );
 }
