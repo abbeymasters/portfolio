@@ -23,7 +23,6 @@ export default function Portfolio() {
     <section className={styles.Portfolio}>
       <button onClick={handleDecrement}><img src="src/assets/leftarrow.png" alt="decrement arrow"></img></button>
       <PortfolioItems {...portfolioItems[index]} />
-      <img className={styles.blob} src="/src/assets/blob1.png" alt="blob image"></img>
       <button onClick={handleIncrement}><img src="src/assets/rightarrow.png" alt="increment arrow"></img></button>
     </section>
   );
