@@ -94,16 +94,14 @@ p:hover:after {
 }
 
 .whoami {
-  width: 50vw;
   display: flex;
   flex-direction: column;
   align-items: space-between;
 
- 
-
   div {
     display: flex;
     flex-direction: row;
+    width: 30vw;
   }
 
   h2 {
@@ -118,11 +116,12 @@ p:hover:after {
 
   h3, a { 
     text-align: left;
-    width: 30vw;
+    width: 20vw;
     margin: 0.75em;
     height: 18%;
     font-family: Source Sans Pro;
-    font-weight: 200;
+    font-weight: 300;
+    color: black;
   }
 
   a {
@@ -133,15 +132,7 @@ p:hover:after {
   }
 
   a:hover{ 
-    animation: pulse 1s;
-    animation-timing-function: linear; 
+    color: rgba(0, 0, 0, 1);
+    box-shadow: 0 5px 15px rgba(255, 139, 62, 0.4);
   }
-  
-  @keyframes pulse {
-    0% { transform: scale(1); }
-    25% { transform: scale(1.07); }
-    50% { transform: scale(1.15); }
-    75% { transform: scale(1.07); }
-    100% { transform: scale(1); }
-    }
 }
