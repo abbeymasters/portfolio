@@ -5,10 +5,11 @@ import Footer from '../components/Footer';
 import Portfolio from '../container/Portfolio';
 import Contact from './Contact.js';
 import AboutMe from './AboutMe.js';
+import styles from './App.css';
 
 const App = () => {
   return (
-    <div>
+    <div className={styles.App}>
       <Router>
         <Header />
         <>

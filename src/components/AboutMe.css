@@ -16,6 +16,10 @@
     color: black;
   }
 
+  a:hover {
+    color: #efba5a;
+  }
+
   p {
     font-family: Source Sans Pro;
     font-weight: 300;
