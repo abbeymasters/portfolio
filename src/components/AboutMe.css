@@ -1,3 +1,87 @@
+@media screen and (max-width: 750px) {
+  .AboutMe {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 13em;
+
+    .paragraphSection {
+      width: 75vw;
+    }
+
+    .imagesSection {
+      margin-top: 3em;
+    }
+    
+    .firstImage {
+      display: none;
+    }
+    
+    .secondImage {
+      text-align: center;
+      position: static;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+@media screen and (min-width: 750px) and (max-width: 1300px) {
+  .AboutMe {
+    margin-right: 0;
+
+    .imagesSection {
+      margin-right: 5%;
+      width: 50vw;
+      position: relative;
+      height: 10em;
+    }
+    
+    .firstImage {
+      position: absolute;
+      top: 20%;
+      left: 20%;
+      width: 70%;
+      height: auto;
+    }
+    
+    .secondImage {
+      position: absolute;
+      left: 10%;
+      top: 50%;
+      width: 70%;
+      height: auto;
+    }
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .AboutMe {
+
+    .imagesSection {
+      width: 50vw;
+      position: relative;
+    }
+    
+    .firstImage {
+      position: absolute;
+      left: 25%;
+      top: 5%;
+      width: 60%;
+      height: auto;
+    }
+    
+    .secondImage {
+      position: absolute;
+      left: 10%;
+      top: 10%;
+      width: 70%;
+      height: auto;
+    }
+  }
+}
+
+
 .AboutMe {
   display: flex;
   justify-content: space-between;
@@ -43,25 +127,11 @@
    }
 }
 
-.imagesSection {
-  margin-right: 5%;
-  width: 50vw;
-  position: relative;
-  height: 10em;
-}
-
-.firstImage {
-  position: absolute;
-  left: 40%;
-}
-
-.secondImage {
-  position: absolute;
-  left: 10%;
-}
-
 .whoAmI {
   display: flex;
   flex-direction: row;
   align-items: center;
+  img {
+    margin-top: 7%;
+  }
 }
