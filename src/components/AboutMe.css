@@ -1,3 +1,54 @@
+@media screen and (max-width: 480px) {
+  .AboutMe {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 13em;
+
+    .paragraphSection {
+      width: 75vw;
+    }
+
+    .imagesSection {
+      margin-top: 3em;
+    }
+    
+    .firstImage {
+      display: none;
+    }
+    
+    .secondImage {
+      text-align: center;
+      position: static;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .AboutMe {
+
+    .imagesSection {
+      margin-right: 5%;
+      width: 50vw;
+      position: relative;
+      height: 10em;
+    }
+    
+    .firstImage {
+      position: absolute;
+      left: 40%;
+    }
+    
+    .secondImage {
+      position: absolute;
+      left: 10%;
+    }
+  }
+}
+
+
 .AboutMe {
   display: flex;
   justify-content: space-between;
@@ -41,23 +92,6 @@
     width: 20%;
     height: 20%;
    }
-}
-
-.imagesSection {
-  margin-right: 5%;
-  width: 50vw;
-  position: relative;
-  height: 10em;
-}
-
-.firstImage {
-  position: absolute;
-  left: 40%;
-}
-
-.secondImage {
-  position: absolute;
-  left: 10%;
 }
 
 .whoAmI {

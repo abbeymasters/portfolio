@@ -1,3 +1,25 @@
+@media screen and (max-width: 480px) {
+  .Header {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+  }
+
+  nav {
+    margin-top: 1em;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .Header {
+    h1 {
+      margin-left: 8%;
+      font-size: 3em;
+    }
+  }
+}
+
+
 .Header {
   display: flex;
   justify-content: space-between;
@@ -27,9 +49,8 @@
   }
 
   h1 {
-    margin-left: 8%;
     font-family: Lora;
-    font-size: 3em;
+    font-size: 2.5em;
     line-break: auto;
   }
 }
