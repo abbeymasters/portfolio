@@ -1,3 +1,14 @@
+@media screen and (max-width: 750px) {
+  .Portfolio {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3em;
+  }
+  .increment {
+    margin-top: 3em;
+  }
+}
+
 .Portfolio {
   margin-bottom: 8%;
   display: flex;

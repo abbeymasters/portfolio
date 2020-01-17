@@ -23,7 +23,7 @@ export default function Portfolio() {
     <section className={styles.Portfolio}>
       <button onClick={handleDecrement}><img src="src/assets/leftarrow.png" alt="decrement arrow"></img></button>
       <PortfolioItems {...portfolioItems[index]} />
-      <button onClick={handleIncrement}><img src="src/assets/rightarrow.png" alt="increment arrow"></img></button>
+      <button className={styles.increment} onClick={handleIncrement}><img src="src/assets/rightarrow.png" alt="increment arrow"></img></button>
     </section>
   );
 }
