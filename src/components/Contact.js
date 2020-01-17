@@ -32,21 +32,16 @@ const Contact = () => {
       </div>
       <section className={styles.whoami}>
         <div>
-          <h2>
-            <img src="src/assets/meicon.png" />
-          </h2>
+          <img src="src/assets/meicon.png" />
           <h3 className={styles.inputOne}>Abbey Masters</h3>
         </div>
         <div>
-          <h2>
-            <img src="src/assets/emailicon.png" />
-          </h2>
+
+          <img src="src/assets/emailicon.png" />
           <a href="mailto:abbeykmasters@gmail.com" className={styles.inputTwo}>abbeykmasters@gmail.com</a>
         </div>
         <div>
-          <h2>
-            <img src="src/assets/location.png" />
-          </h2>
+          <img src="src/assets/location.png" />
           <h3 className={styles.inputThree}>Portland, Oregon</h3>
         </div>
       </section>
