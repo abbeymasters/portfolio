@@ -1,5 +1,8 @@
 import React from 'react';
 import styles from './Contact.css';
+import meicon from '../assets/meicon.png';
+import emailicon from '../assets/emailicon.png';
+import location from '../assets/location.png';
 
 // button animation inspired by https://codepen.io/ines/pen/oeZdYv?editors=1100
 
@@ -32,16 +35,16 @@ const Contact = () => {
       </div>
       <section className={styles.whoami}>
         <div>
-          <img src="src/assets/meicon.png" />
+          <img src={meicon} />
           <h3 className={styles.inputOne}>Abbey Masters</h3>
         </div>
         <div>
 
-          <img src="src/assets/emailicon.png" />
+          <img src={emailicon} />
           <a href="mailto:abbeykmasters@gmail.com" className={styles.inputTwo}>abbeykmasters@gmail.com</a>
         </div>
         <div>
-          <img src="src/assets/location.png" />
+          <img src={location} />
           <h3 className={styles.inputThree}>Portland, Oregon</h3>
         </div>
       </section>
