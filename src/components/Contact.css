@@ -3,7 +3,7 @@
    width: 100vw;
    .wrapper {
      p {
-       width: 175px;
+       max-width: 175px;
      }
    }
    
