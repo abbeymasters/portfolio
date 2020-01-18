@@ -1,7 +1,7 @@
 import dejabrewicon from '../src/assets/dejabrewicon.png';
 import mindDrifticon from '../src/assets/mindDrifticon.png';
 import tonechecklogo from '../src/assets/tonechecklogo.png';
-import heartbotbbimage from '../src/assets/heartbotbbicon.png';
+import heartbotbbimage from '../src/assets/heartbotbbicon.jpg';
 
 const portfolioItems = [
   {
