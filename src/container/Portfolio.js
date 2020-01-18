@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import styles from './Portfolio.css';
 import PortfolioItems from '../components/PortfolioItems';
 import portfolioItems from '../../data/portfolioItems';
+import leftarrow from '../assets/leftarrow.png';
+import rightarrow from '../assets/rightarrow.png';
+
 
 export default function Portfolio() {
 
@@ -21,9 +24,9 @@ export default function Portfolio() {
 
   return (
     <section className={styles.Portfolio}>
-      <button onClick={handleDecrement}><img src="src/assets/leftarrow.png" alt="decrement arrow"></img></button>
+      <button onClick={handleDecrement}><img src={leftarrow} alt="decrement arrow"></img></button>
       <PortfolioItems {...portfolioItems[index]} />
-      <button className={styles.increment} onClick={handleIncrement}><img src="src/assets/rightarrow.png" alt="increment arrow"></img></button>
+      <button className={styles.increment} onClick={handleIncrement}><img src={rightarrow} alt="increment arrow"></img></button>
     </section>
   );
 }
