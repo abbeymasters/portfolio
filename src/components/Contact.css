@@ -1,6 +1,11 @@
 @media screen and (max-width: 750px) {
   .Contact {
    width: 100vw;
+   .wrapper {
+     p {
+       width: 175px;
+     }
+   }
    
    .whoami {
     display: flex;
