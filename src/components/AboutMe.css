@@ -26,7 +26,7 @@
   }
 }
 
-@media screen and (min-width: 750px) and (max-width: 1300px) {
+@media screen and (min-width: 750px) and (max-width: 1400px) {
   .AboutMe {
     margin-right: 0;
 
@@ -55,7 +55,7 @@
   }
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1375px) {
   .AboutMe {
 
     .imagesSection {
@@ -64,18 +64,13 @@
     }
     
     .firstImage {
-      position: absolute;
-      left: 25%;
-      top: 5%;
-      width: 60%;
-      height: auto;
+      display: none;
     }
     
     .secondImage {
       position: absolute;
       left: 10%;
-      top: 10%;
-      width: 70%;
+      width: 50%;
       height: auto;
     }
   }
