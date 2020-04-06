@@ -34,19 +34,15 @@ const Contact = () => {
         </svg>
       </div>
       <section className={styles.whoami}>
-        <div>
-          <img src={meicon} />
-          <h3 className={styles.inputOne}>Abbey Masters</h3>
+        <div className={styles.box}>
+          <h2>Lets Talk</h2>
+          <section className={styles.links}>
+            <a href="mailto:abbeykmasters@gmail.com">abbeykmasters@gmail.com</a>
+            <a href="https://www.linkedin.com/in/abbeymasters/">LinkedIn</a>
+            <a href="https://github.com/abbeymasters">GitHub</a>
+          </section>
         </div>
-        <div>
-
-          <img src={emailicon} />
-          <a href="mailto:abbeykmasters@gmail.com" className={styles.inputTwo}>abbeykmasters@gmail.com</a>
-        </div>
-        <div>
-          <img src={location} />
-          <h3 className={styles.inputThree}>Portland, Oregon</h3>
-        </div>
+      
       </section>
     </section>
   );

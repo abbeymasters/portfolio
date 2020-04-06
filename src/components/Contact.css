@@ -16,6 +16,12 @@
   }
 }
 
+@media screen and (max-width: 400px) {
+  .box {
+    flex-direction: column;
+   }
+}
+
 .Contact {
   display: flex;
   flex-direction: column;
@@ -75,83 +81,37 @@ p:hover:before,
 p:hover:after {
   transform: none;
 }
-}
-
-.inputOne {
-  background-color: #fadfbe;
-  border-radius: .5em;
-  margin-left: 2em;
-  color: white;
-  width: 40%;
-  min-width: 180px;
-  max-width: 215px;
-  height: 18%;
-  padding: .5em;
-}
-
-.inputTwo {
-  background-color: #fcd0cc;
-  border-radius: .5em;
-  padding: .5em;
-  margin-left: 2em;
-  color: white;
-  width: 40%;
-  min-width: 180px;
-  max-width: 215px;
-  height: 18%;
-}
-
-.inputThree {
-  background-color: #ffb9b2;
-  border-radius: .5em;
-  padding: .5em;
-  margin-left: 2em;
-  color: white;
-  width: 40%;
-  min-width: 180px;
-  max-width: 215px;
-  height: 18%;
-}
-
-.whoami {
+.box {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
+  width: 100vw;
+  h2 {
+    font-family: Source Sans Pro;
+    margin-right: 1.5%;
+  }
 
-  div {
+  .links {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-  
-  img {
-    width: 5%;
-    height: 5%;
-    margin-right: 2em;
-    margin-top: 0.5em;
-    margin-left: 1em;
-    min-width: 50px;
+    flex-direction: column;
+    margin-left: 1.5%;
+
+    a {
+      font-family: lora;
+      color: black;
+      text-decoration: none;
+      margin-bottom: 0.5em;
+    }
+
+    a:hover {
+      font-weight: 700;
+      color: #ffb620;
+    }
   }
 
-  h3, a { 
-    text-align: left;
-    margin: 0.75em;
-    height: 18%;
-    font-family: Source Sans Pro;
-    font-weight: 300;
-    color: black;
-  }
+}
 
-  a {
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-family: Source Sans Pro;
-    font-weight: 200;
-  }
 
-  a:hover{ 
-    color: rgba(0, 0, 0, 1);
-    box-shadow: 0 5px 15px rgba(255, 139, 62, 0.4);
-  }
+
 }
