@@ -1,8 +1,12 @@
+import dejabrewicon from '../src/assets/dejabrewicon.png';
+import mindDrifticon from '../src/assets/mindDrifticon.png';
+import tonechecklogo from '../src/assets/tonechecklogo.png';
+import heartbotbbimage from '../src/assets/heartbotbbicon.jpg';
 
 const portfolioItems = [
   {
     title: 'mindDrift',
-    img: 'src/assets/mindDrifticon.png',
+    img: mindDrifticon,
     description: 'mindDrift is a mindful breathing app developed for those who need an easy, on-the-go way to focus on taking deep breaths and to practice being still.',
     techStack: ['React', 'Redux', 'Node.js', 'MongoDB', 'Express'],
     github: 'https://github.com/mindDrift/mind-drift-fe',
@@ -10,7 +14,7 @@ const portfolioItems = [
   },
   {
     title: 'HeartBotBB',
-    img: 'src/assets/heartbotbbicon.jpg',
+    img: heartbotbbimage,
     description: 'Healing Heart Bot is a Twitter bot designed to help you get through a breakup by sharing supportive messages when you tweet at it.',
     techStack: ['Node.js', 'MongoDB', 'Express'],
     github: 'https://github.com/Healing-HeartBot/healing-heart-bot',
@@ -19,7 +23,7 @@ const portfolioItems = [
   },
   {
     title: 'Tone Check',
-    img: 'src/assets/tonechecklogo.png',
+    img: tonechecklogo,
     description: 'Leveraging the IBM Watson Tone Analyzer API, Tone Check provides users an empty slate to paste text, and in turn, gives them an analysis of that text.',
     techStack: ['JavaScipt', 'HTML', 'CSS', 'Express'],
     github: 'https://github.com/mood-mangoes/mood-mangoes.github.io',
@@ -27,7 +31,7 @@ const portfolioItems = [
   },
   {
     title: 'DejaBrew',
-    img: 'src/assets/dejabrewicon.png',
+    img: dejabrewicon,
     description: 'DejaBrew utilizes Vanilla JavaScript, HTML and CSS to teach users how to make espresso-based coffee drinks. Users hone their skills in practice mode, and then move to play mode where they\'ll be timed.',
     techStack: ['JavaScipt', 'HTML', 'CSS'],
     github: 'https://github.com/team-caffeine/team-caffeine.github.io',

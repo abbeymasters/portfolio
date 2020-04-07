@@ -26,7 +26,7 @@
   }
 }
 
-@media screen and (min-width: 750px) and (max-width: 1300px) {
+@media screen and (min-width: 750px) and (max-width: 1400px) {
   .AboutMe {
     margin-right: 0;
 
@@ -39,7 +39,7 @@
     
     .firstImage {
       position: absolute;
-      top: 20%;
+      top: 10%;
       left: 20%;
       width: 70%;
       height: auto;
@@ -48,34 +48,30 @@
     .secondImage {
       position: absolute;
       left: 10%;
-      top: 50%;
+      top: 35%;
       width: 70%;
       height: auto;
     }
   }
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1400px) {
   .AboutMe {
 
     .imagesSection {
       width: 50vw;
       position: relative;
+      margin-bottom: 50%;
     }
     
     .firstImage {
-      position: absolute;
-      left: 25%;
-      top: 5%;
-      width: 60%;
-      height: auto;
+      display: none;
     }
     
     .secondImage {
       position: absolute;
       left: 10%;
-      top: 10%;
-      width: 70%;
+      width: 60%;
       height: auto;
     }
   }
